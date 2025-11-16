@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(135deg, #f3f3f3 0%, #f9e295 100%);
+  min-height: 100vh;
+  
+  
+}
+
+
+
 .page-header {
   text-align: center;
   padding: 3rem 2rem;

@@ -6,6 +6,11 @@
   border-radius: var(--border-radius);
   margin: 2rem 0;
 }
+body {
+  background: linear-gradient(135deg, #f3f3f3 0%, #f9e295 100%);
+  min-height: 100vh;
+  
+}
 
 .about-hero h1 {
   font-size: 3rem;
