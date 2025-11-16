@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - KumbhKart</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="home.html" class="logo">KumbhKart</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search for products...">
+        <button>🔍</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">🛒 Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="page-header">
+      <h1>Our Products</h1>
+      <p>Explore our wide range of premium products</p>
+    </section>
+
+   
+    <div class="products-section">
+      <aside class="filters-sidebar">
+        <div class="filter-group">
+          <h3>Category</h3>
+          <div class="filter-options">
+            <label><input type="checkbox"> Electronics</label>
+            <label><input type="checkbox"> Fashion</label>
+            <label><input type="checkbox"> Home & Kitchen</label>
+            <label><input type="checkbox"> Books</label>
+            <label><input type="checkbox"> Sports</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Price Range</h3>
+          <div class="price-filter">
+            <input type="range" min="0" max="50000" value="50000" class="price-slider">
+            <div class="price-display">
+              <span>₹0</span> - <span>₹50,000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Rating</h3>
+          <div class="filter-options">
+            <label><input type="checkbox"> ⭐⭐⭐⭐⭐ 5 Star</label>
+            <label><input type="checkbox"> ⭐⭐⭐⭐ 4+ Star</label>
+            <label><input type="checkbox"> ⭐⭐⭐ 3+ Star</label>
+            <label><input type="checkbox"> ⭐⭐ 2+ Star</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Availability</h3>
+          <div class="filter-options">
+            <label><input type="checkbox"> In Stock</label>
+            <label><input type="checkbox"> Out of Stock</label>
+          </div>
+        </div>
+
+        <button class="btn btn-primary filter-reset">Reset Filters</button>
+      </aside>
+
+      <main class="products-main">
+        <div class="products-toolbar">
+          <div class="sort-options">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+              <option>Relevance</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+              <option>Best Sellers</option>
+              <option>Rating</option>
+            </select>
+          </div>
+          <div class="view-options">
+            <button class="view-toggle grid-view active" title="Grid View">⊞</button>
+            <button class="view-toggle list-view" title="List View">☰</button>
+          </div>
+        </div>
+
+        <div class="products-grid grid-layout">
+          <div class="product-card">
+            <div class="product-image">💻</div>
+            <div class="product-info">
+              <h3>Laptop Pro 15</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (245 reviews)</p>
+              <p class="product-description">High-performance laptop with 16GB RAM and SSD storage</p>
+              <p class="price">₹45,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">🔥 HOT</div>
+            <div class="product-image">📱</div>
+            <div class="product-info">
+              <h3>Smartphone X</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (512 reviews)</p>
+              <p class="product-description">Latest flagship smartphone with advanced camera</p>
+              <p class="price">₹34,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">👟</div>
+            <div class="product-info">
+              <h3>Sports Shoes</h3>
+              <p class="product-category">Fashion</p>
+              <p class="rating">⭐⭐⭐⭐ (189 reviews)</p>
+              <p class="product-description">Comfortable and stylish sports shoes for everyday wear</p>
+              <p class="price">₹4,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">⌚</div>
+            <div class="product-info">
+              <h3>Smart Watch</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (367 reviews)</p>
+              <p class="product-description">Feature-rich smartwatch with health tracking</p>
+              <p class="price">₹9,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">🪑</div>
+            <div class="product-info">
+              <h3>Office Chair</h3>
+              <p class="product-category">Home & Kitchen</p>
+              <p class="rating">⭐⭐⭐⭐ (156 reviews)</p>
+              <p class="product-description">Ergonomic office chair for comfortable working</p>
+              <p class="price">₹8,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">📖</div>
+            <div class="product-info">
+              <h3>Best Seller Book</h3>
+              <p class="product-category">Books</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (432 reviews)</p>
+              <p class="product-description">Award-winning fiction novel</p>
+              <p class="price">₹399</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">🔊</div>
+            <div class="product-info">
+              <h3>Bluetooth Speaker</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (298 reviews)</p>
+              <p class="product-description">Portable wireless speaker with excellent sound quality</p>
+              <p class="price">₹3,499</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">📷</div>
+            <div class="product-info">
+              <h3>HD Camera</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (214 reviews)</p>
+              <p class="product-description">Professional HD camera with 4K video recording</p>
+              <p class="price">₹12,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">🏷️ Sale</div>
+            <div class="product-image">👔</div>
+            <div class="product-info">
+              <h3>Formal Shirt</h3>
+              <p class="product-category">Fashion</p>
+              <p class="rating">⭐⭐⭐⭐ (145 reviews)</p>
+              <p class="product-description">Premium cotton formal shirt</p>
+              <p class="price">₹1,499</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">🎮</div>
+            <div class="product-info">
+              <h3>Gaming Console</h3>
+              <p class="product-category">Electronics</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (521 reviews)</p>
+              <p class="product-description">Latest generation gaming console with 1TB storage</p>
+              <p class="price">₹34,999</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">💄</div>
+            <div class="product-info">
+              <h3>Makeup Kit</h3>
+              <p class="product-category">Fashion</p>
+              <p class="rating">⭐⭐⭐⭐ (267 reviews)</p>
+              <p class="product-description">Professional makeup kit with 24 colors</p>
+              <p class="price">₹1,299</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">🧘‍♂️</div>
+            <div class="product-info">
+              <h3>Yoga Mat</h3>
+              <p class="product-category">Sports</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (189 reviews)</p>
+              <p class="product-description">Non-slip yoga mat with carrying strap</p>
+              <p class="price">₹799</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-secondary">❤️</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn">← Previous</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn">Next →</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About KumbhKart</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <ul>
+          <li><a href="#"> Facebook</a></li>
+          <li><a href="#"> Twitter</a></li>
+          <li><a href="#"> Instagram</a></li>
+          <li><a href="#"> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 KumbhKart. All rights reserved. | Made with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
