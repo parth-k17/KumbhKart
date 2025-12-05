@@ -124,13 +124,43 @@ header nav {
   flex: 2;
   text-align: left;
 }
+.qty-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.qty-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.qty-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
 .cart-qty {
-  flex: 0.5;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
 }
 .cart-price {
   flex: 1;
   color: var(--primary-color);
   font-weight: 600;
+  text-align: right;
+  margin-right: 15px;
 }
 .remove-btn {
   background: none;
@@ -148,9 +178,12 @@ header nav {
   font-weight: 600;
   margin-bottom: 1.5rem;
   width: 100%;
+  border-top: 2px solid #f1f1f1;
+  padding-top: 1rem;
 }
 .cart-total {
   color: var(--primary-color);
+  font-size: 1.3rem;
 }
 .checkout-btn {
   width: 100%;
@@ -174,51 +207,14 @@ header nav {
   box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
 @media (max-width: 768px) {
-  header nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .search-container {
-    max-width: 100%;
-    order: 3;
-    width: 100%;
-  }
-  .nav-links {
-    gap: 1rem;
-    order: 2;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .page-header h1 {
-    font-size: 1.8rem;
-  }
-  .cart-section {
-    padding: 1.5rem 1rem;
-  }
+  header nav { flex-wrap: wrap; gap: 1rem; }
+  .search-container { max-width: 100%; order: 3; width: 100%; }
+  .nav-links { gap: 1rem; order: 2; width: 100%; justify-content: space-around; }
+  .cart-section { padding: 1.5rem 1rem; }
 }
 @media (max-width: 480px) {
-  header nav {
-    flex-direction: column;
-  }
-  .logo {
-    width: 100%;
-    text-align: center;
-  }
-  .search-container {
-    width: 100%;
-  }
-  .nav-links {
-    width: 100%;
-    flex-direction: column;
-  }
-  .page-header {
-    padding: 1.5rem 1rem;
-    margin: 1rem 0;
-  }
-  .page-header p {
-    display: none;
-  }
-  .cart-section {
-    padding: 1.5rem 1rem;
-  }
+  header nav { flex-direction: column; }
+  .logo, .search-container, .nav-links { width: 100%; text-align: center; }
+  .nav-links { flex-direction: column; }
+  .page-header p { display: none; }
 }
