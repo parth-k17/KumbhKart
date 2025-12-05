@@ -159,6 +159,12 @@ header nav {
 .signup-link a:hover {
   text-decoration: underline;
 }
+.error-msg {
+  color: #ff3333;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  min-height: 20px; 
+}
 @media (max-width: 768px) {
   header nav {
     flex-wrap: wrap;
@@ -198,9 +204,7 @@ header nav {
     padding: 1.5rem 1rem;
     margin: 1rem 0;
   }
-  .page-header p {
-    display: none;
-  }
+
   .login-section {
     padding: 1.5rem 1rem;
   }
